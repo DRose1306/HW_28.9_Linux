@@ -1,0 +1,43 @@
+{\rtf1\ansi\ansicpg1251\cocoartf2708
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red236\green236\blue236;\red0\green0\blue0;\red236\green236\blue236;
+\red34\green255\blue6;}
+{\*\expandedcolortbl;;\cssrgb\c94118\c94118\c94118;\cssrgb\c0\c0\c0;\cssrgb\c94118\c94118\c94118;
+\cssrgb\c0\c100000\c0;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\fs30 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 0\'a0\cf4 \cb3 \outl0\strokewidth0 mkdir\'a0-p\'a0/opt/Urmat\cf2 \cb3 \outl0\strokewidth0 \strokec2 \
+\'a0\'a0\'a01\'a0nano\'a0script.sh\
+\
+\pard\pardeftab720\partightenfactor0
+\cf2 \cb5 \strokec3 #\cf2 \cb3 \strokec2 !/bin/bash\
+mkdir\'a0-p\'a0/opt/Urmat/test\
+ls\'a0-a\'a0/bin\'a0|\'a0head\'a0-n\'a010\'a0>\'a0/opt/Urmat/test/output.txt\
+mkdir\'a0-p\'a0/opt/Urmat/tmp\
+\'a0\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0for\'a0file\'a0in\'a0\{b..f\}\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0do\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0touch\'a0/opt/Urmat/tmp/$file\
+\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0done\
+\'a0\
+df\'a0-h\'a0/\'a0>\'a0/opt/Urmat/tmp/f\
+mv\'a0/opt/Urmat/tmp/b\'a0/opt/Urmat/\
+mv\'a0/opt/Urmat/tmp/c\'a0/opt/Urmat/\
+mv\'a0/opt/Urmat/tmp/d\'a0/opt/Urmat/\
+mv\'a0/opt/Urmat/tmp/e\'a0/opt/Urmat/\
+mv\'a0/opt/Urmat/test/output.txt\'a0/opt/Urmat/tmp/done.txt\
+echo\'a0"\uc0\u1075 \u1086 \u1090 \u1086 \u1074 \u1086 !\'a0\u1089 \u1087 \u1072 \u1089 \u1080 \u1073 \u1086 ,\'a0\u1048 \u1074 \u1072 \u1085 "\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\
+\'a0\'a0\'a02\'a0chmod\'a0744\'a0script.sh\
+\pard\pardeftab720\partightenfactor0
+\cf2 \'a0\'a0 3\'a0./script.sh\
+\'a0\'a0 4\'a0history\
+\'a0\'a0 5\'a0history\'a0>\'a0history.txt\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+}
